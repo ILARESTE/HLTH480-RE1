@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bardia Parand — Career Goal Summary</title>
+<meta name="description" content="Health Sciences undergraduate at the University of Waterloo specializing in Health Informatics — values, career goals, and experience in cancer research and digital health.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!--
+* AI DECLERATION:
+I HAVE USED AI TO TRANSFORM MY HTML FILES INTO A MORE BEAUTIFUL AND CLEANER LOOKING WEBSITE. 
+I HAVE USED GITHUB CO-PILOT AND VS CODE SUGGESTIONS TO HELP ME WITH THE CSS PORTION ONLY. 
+THIS MEANS THAT I HAVE ALSO ADDED THE SECTION ID, AND THE IDEA OF COMPARTMENTALIZATION. 
+THE TEXTS, AND ALL THE HTML GENERATED CONTENTS ARE ALL WRITTEN BY ME.
+I HAVE NOT USED AI TO WRITE ANY OF THE TEXTS OR CONTENTS, JUST THE CSS PART OF IT.
+
+Date: October 7th, 2026
+BARDIA PARAND
+-->
+
+
+<!-- THIS IS THE STARTING PART WHERE I ASKED AI TO CONTRIBUTE ITS CSS TO HELP ME MAKE EVERYTHING LOOK CLEAN :) -->
+<style>
+:root{
+  --ink:#15262B;
+  --paper:#F3F5F1;
+  --sage:#4E7A62;
+  --sage-deep:#2F4F3F;
+  --sand:#E6E2D7;
+  --muted:#657471;
+  --measure:62ch;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:Karla,system-ui,-apple-system,sans-serif;
+  font-size:1.0625rem;
+  line-height:1.65;
+}
+img{max-width:100%;display:block}
+a{color:var(--sage-deep);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--sage)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--sage);outline-offset:3px}
+
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(3rem,9vw,6.5rem) 0 clamp(2rem,5vw,3.5rem)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(1.75rem,5vw,4rem);align-items:end}
+.name{
+  font-family:Fraunces,Georgia,serif;
+  font-weight:300;
+  font-size:clamp(3rem,11vw,6.75rem);
+  line-height:.92;
+  letter-spacing:-.025em;
+  margin:0;
+}
+.name span{display:block}
+.name .last{font-weight:600;color:var(--sage-deep)}
+.standfirst{
+  font-family:Fraunces,Georgia,serif;
+  font-weight:300;
+  font-size:clamp(1.15rem,2.4vw,1.5rem);
+  line-height:1.4;
+  color:var(--muted);
+  max-width:34ch;
+  margin:1.5rem 0 0;
+}
+.portrait{border-radius:2px;aspect-ratio:4/5;object-fit:cover;width:100%;background:var(--sand)}
+.portrait-note{font-size:.8125rem;color:var(--muted);margin:.5rem 0 0}
+
+/* ---------- sections ---------- */
+section{padding:clamp(2.5rem,6vw,4.5rem) 0;border-top:1px solid var(--sand)}
+h2{
+  font-family:Fraunces,Georgia,serif;
+  font-weight:400;
+  font-size:clamp(1.6rem,3.4vw,2.25rem);
+  line-height:1.15;
+  letter-spacing:-.015em;
+  margin:0 0 1.5rem;
+}
+p{max-width:var(--measure);margin:0 0 1.15rem}
+p:last-child{margin-bottom:0}
+
+.split{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,3rem);align-items:start}
+.split-reverse{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}
+figure{margin:0}
+figure img{border-radius:2px;aspect-ratio:3/4;object-fit:cover;width:100%;background:var(--sand)}
+.wide figure img{aspect-ratio:4/3}
+figcaption{font-size:.875rem;color:var(--muted);margin-top:.6rem;line-height:1.45}
+
+/* ---------- values ---------- */
+.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:1rem;margin:0}
+.value{
+  padding:1.35rem;
+  border:1px solid var(--sand);
+  border-radius:8px;
+  background:#fff;
+  box-shadow:0 2px 8px rgb(21 38 43 / 5%);
+  transition:transform .2s ease,border-color .2s ease,background-color .2s ease,box-shadow .2s ease;
+}
+.value:hover{
+  transform:translateY(-4px);
+  border-color:var(--sage);
+  background:#F8FAF7;
+  box-shadow:0 8px 20px rgb(21 38 43 / 12%);
+}
+.value h3{
+  font-family:Fraunces,Georgia,serif;
+  font-weight:600;
+  font-size:1.2rem;
+  margin:0 0 .4rem;
+  color:var(--sage-deep);
+}
+.value p{margin:0}
+
+/* ---------- goals ---------- */
+.goals{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:clamp(1.25rem,3vw,2.25rem)}
+.goal{border-left:2px solid var(--sage);padding:.1rem 0 .1rem 1.25rem}
+.goal h3{
+  font-family:Karla,sans-serif;
+  font-weight:700;
+  font-size:.9375rem;
+  letter-spacing:.01em;
+  margin:0 0 .5rem;
+  color:var(--sage-deep);
+}
+.goal p{max-width:38ch}
+
+/* ---------- interests ---------- */
+.interests{list-style:none;padding:0;margin:1.5rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem;max-width:var(--measure)}
+.interests li{background:var(--sand);padding:.35rem .8rem;border-radius:2px;font-size:.9375rem}
+
+/* ---------- footer ---------- */
+footer{padding:clamp(2.5rem,6vw,4rem) 0 clamp(3rem,7vw,5rem);border-top:1px solid var(--sand)}
+.contact{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:baseline}
+.contact p{margin:0}
+
+@media (max-width:760px){
+  .hero-grid,.split,.split-reverse{grid-template-columns:1fr}
+  .hero-grid{align-items:start}
+  .portrait{max-width:17rem;aspect-ratio:1/1}
+  .split figure{max-width:20rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+<!-- END OF AI CONTRIBUTION. THE AI USED WAS THE GITHUB CO-PILOT SINCE THE CODE IS UPLOADED THERE, MIGHT AS WELL-->
+<!-- I ALSO USED THE VS CODEs LINE SUGGESTIONS -->
+
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 class="name"><span>Bardia</span><span class="last">Parand</span></h1>
+      <p class="standfirst">
+        Fourth-year Health Sciences student at Waterloo specializing in Health Informatics with a minor in Medical Physiology. Exploring the intersection of clinical care, artificial intelligence, and public health software.
+      </p>
+    </div>
+    <div>
+      <img class="portrait" src="images/Portrait.png" alt="Portrait of Bardia Parand">
+      <p class="portrait-note"> One of my pictures from USherbooke 
+        where i worked and uplaoded it as professional picture to 
+        present my findings</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="about">
+    <div class="wrap split">
+      <div>
+        <h2>About me</h2>
+        <p> Working in healthcare (cancer) research quickly taught me that clinical intuition 
+          is only half the battle; the tools and systems behind the scenes 
+          dictate how well the element of "care" is delivered. As a Health Sciences student 
+          at Waterloo in the Co-op stream, I have spent my degree learning how 
+          human physiology, medical science, and technology intersect, both in practice and education. 
+          Serving as an Undergraduate Cancer Research Assistant gave me my first real look at complex 
+          medical data, where I realized how data-driven insights can directly improve 
+          patient outcomes.</p>
+          
+          <p>When I started university, I viewed healthcare through a strictly traditional clinical lens. 
+            Since medical school is my goal, but over the years it has come to change.
+            Diving into health informatics and physiology shifted my perspective. 
+            Seeing how inefficient systems can bottleneck care inspired me to explore software engineering 
+            and AI applications in public health (which I am currently working on). 
+            Combining clinical science with technical problem-solving has completely 
+            change this view, pushing me to build tools that make medical 
+            interventions smarter and more accessible, before becoming one of the users </p>
+      </div>
+      <figure>
+        <img src="images/LabPic.png" alt="Bardia presenting cancer research data or working in a health informatics lab setting">
+        <figcaption>One of the pictures I took from my time as bioinformatics programmer in USherbrooke.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="values">
+    <div class="wrap">
+      <h2>What I work by</h2>
+      <div class="values">
+
+        <div class="value">
+          <h3>Empathy</h3>
+          <p>Choosing to work behind the bench meant giving up direct patient contact, 
+            and for a while that bothered me. What changed my thinking was realizing that 
+            if an oncolytic virus (cancer research) project works, it reaches people I will never meet. 
+            The distance is real, but so is the responsibility, and I try to keep 
+            the person at the end of the pipeline in mind even when the work in front 
+            of me is a sequence file.
+          </p>  
+        </div>
+
+        <div class="value">
+          <h3>Data-Driven Compassion</h3>
+            <p>At Sherbrooke I worked with genomic data from oncolytic virus research 
+              while also speaking with patients who had been through similar cancer treatments. 
+              Hearing what treatment actually felt like, and then opening a dataset built from cases 
+              like theirs, made the two impossible to separate. I handle clinical and genomic data carefully 
+              because I have met the kind of person a row in that table describes.</p>          
+        </div>
+        <div class="value">
+          <h3>Interdisciplinary Curiosity</h3>
+          <p>The genetics I learned in BIOL 239 was not background knowledge for me but
+            it was the thing that let me read genomic data well enough to help engineer a new virus.
+            That combination is what I keep looking for. My current NSERC work with the renal department 
+            sits in the same space, applying AI to a clinical education problem that neither a pure 
+            programmer nor a pure health researcher could solve alone.</p>        
+        </div>
+
+        <div class="value">
+          <h3>Continuous Adaptation</h3>
+          <p>In three years I have gone from wet lab and bioinformatics work, 
+            to an instructional support role maintaining course websites, 
+            to software engineering and AI research. None of those transitions came with training; 
+            each one started with a problem I could not solve using what I already knew.
+             I have stopped treating that as a setback and started treating it as the 
+             normal shape of the work.</p>     
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="goals">
+    <div class="wrap">
+      <h2>Where I'm going</h2>
+      <div class="goals">
+        <div class="goal">
+          <h3>Short-term (Next 2 Years)</h3>
+          <p>Finish my undergraduate degree and apply to medical school. Alongside that, 
+            I am completing an NSERC project with the Waterloo Region Health Network and 
+            the Faculty of Health, applying AI to nurse education, and I intend to keep 
+            contributing to their work through graduation.</p>
+          <p>If medical school does not work out immediately, I will pursue a master's 
+            while working as a health data analyst or software engineer in a public health setting. 
+            Both paths lead to the same place, so neither is a fallback.</p>
+        </div>
+        <div class="goal">
+          <h3>Long-term</h3>
+          <p>Practise as a physician-innovator, or complete a PhD in health informatics 
+            and work as a health software architect. What I want either way is to 
+            stay close to both the clinical problem and the system built to solve it.</p>
+          <p>Joining WRHN as an engineer who understands public health would be one version of that, 
+            and it is a direction I would take seriously if it opened up.</p>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="interests" class="wide">
+    <div class="wrap split split-reverse">
+    <figure>
+      <img src="images/informatics.png" alt="Two clinicians reviewing treatment planning software on screen">
+      <figcaption>Photo by <a href="https://unsplash.com/@accuray" target="_blank" rel="noopener">Accuray</a> on <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</figcaption>
+    </figure>
+      <div>
+        <h2>What I'm drawn to in health</h2>
+        <p>I am particularly passionate about using health informatics to modernize public health monitoring and cancer care. Working with large-scale health data revealed how predictive models and AI can catch health trends early, streamline clinical decisions, and improve resource allocation for underserved communities.</p>
+        <ul class="interests">
+          <li>Health Informatics</li>
+          <li>Cancer Research & Oncology</li>
+          <li>AI in Medicine and Healthcare</li>
+          <li>Biological and Health Sciences</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap contact">
+    <p><a href="https://www.linkedin.com/in/bardia-parand-116248220/" target="_blank" rel="noopener">LinkedIn</a></p>
+    <p><a href="mailto:bparand@uwaterloo.ca">bparand.AT.uwaterloo.ca</a></p>
+    <p size = "1px"</p>
+    <p style="color:var(--muted);font-size:.875rem">University of Waterloo - HLTH 480 - 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
